@@ -1,0 +1,78 @@
+\documentclass[11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\setlength{\evensidemargin}{.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\topmargin}{-.75in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.5in}
+\newcommand{\due}{September 12th, 2012}
+\newcommand{\HWnum}{1}
+\input{/home/joey/Documents/Class/Define.tex}
+
+\begin{document}
+Given the function
+$$g(x,y) = \left\{\begin{array}{cc}
+           \frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}    &\{x,y\}\ne\{0,0\}\\ 
+           0                                       &\{x,y\}=\{0,0\}
+           \end{array}\right.$$
+we can test if $g(x,y)$ is continuous by using an epsilon delta proof. 
+
+Note that the $\epsilon$, $\delta$ definition of the limit states that for a function $f$ the statement
+\begin{equation}
+\lim_{\{x,y\}\rightarrow \{a,b\}}f(x,y) = L
+\label{lim}
+\end{equation}
+implies that for all $\epsilon>0$ there exists a $\delta>0$ such that for all $x$ within the condition
+$$\sqrt{(x-a)^2+(y-b)^2} < \delta$$
+the following condition 
+$$|f(x,y) - L|<\epsilon$$
+also holds true. So we can apply this fact to the definition of continuity
+\begin{equation}
+\lim_{\{x,y\}\rightarrow \{a,b\}}f(x,y) = f(a,b)
+\label{conti}
+\end{equation}
+by noting that by combining equations \ref{lim} and \ref{conti} we can say $f(x,y)$ is continuous if $L=f(a,b)$. 
+
+So to preform an $\epsilon$-$\delta$ proof of continuity we need to show that the limit of $f(x,y)$ exists and equals the $f(a,b)$. To prove this we must show that given the condition 
+$$\sqrt{(x-a)^2+(y-b)^2} < \delta$$
+we can find some $\epsilon>0$ that also gives the condition
+$$|f(x,y) - L|<\epsilon$$
+
+So we can apply this to $g(x,y)$ at the point $(0,0)$ by first noting that we are given the value $g(0,0) = 0$. This implies that if we can show that
+$$\lim_{\{x,y\}\rightarrow \{0,0\}}g(x,y) \stackrel{?}{=} 0$$
+then we can say $g(x,y)$ is continuous at the point $(0,0)$. This means that we need to show that there exists some $\epsilon > 0$ that constrains $g(x,y)$ by
+$$|g(x,y) - 0|<\epsilon$$
+given that 
+$$\sqrt{(x-0)^2+(y-0)^2} < \delta$$
+So we start with 
+$$\left|g(x,y)-0\right| = \left|\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}\right|$$
+Note that if we define a new variable $r$ such that $r^2 = x^2+y^2$ we can see that we get
+$$\left|\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}}\right| = \left|\frac{\sin(r^2)}{r}\right|$$
+Note that in the single variable case we can apply \emph{L'H\^{o}pital's rule} to find the limit
+$$\lim_{r\rightarrow0}\frac{\sin(r^2)}{r} = \lim_{r\rightarrow0}\frac{2r\cos(r^2)}{1} = 0$$
+Due to the fact that the limit exists (we proved it using \emph{L'H\^{o}pital's}) we can can say that there exists some $\delta>0$ and some $\epsilon>0$ such that
+\begin{align*}
+|r| &< \delta\\
+\left|\frac{\sin(r^2)}{r} - 0\right| &< \epsilon
+\end{align*}
+Now by going back to the variables $x$ and $y$ we see that we have
+$$|\sqrt{x^2+y^2}| < \delta$$
+note given this condition it follows that
+$$\left|\frac{\sin(x^2+y^2)}{\sqrt{x^2+y^2}} - 0\right| < \epsilon$$
+This implies that 
+$$\lim_{\{x,y\}\rightarrow \{0,0\}}g(x,y) = 0 = f(0,0)$$
+Therefore $g(x,y)$ is continuous at the point $(0,0)$.
+
+
+
+
+
+\end{document}
+
