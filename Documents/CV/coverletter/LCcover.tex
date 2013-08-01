@@ -1,0 +1,73 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Joe}{Becker}
+%\title{Resumé title}                               % optional, remove / comment the line if not wanted
+\address{1846 19th Street}{Boulder, Colorado 80302}{USA}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(970)402-3968}                   % optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{jbecker~at~colorado.edu}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       letter       ---------------------------------------------------------
+% recipient data
+\recipient{Richard Mandeville}{RealD Inc.\\ 5335 Sterling Drive\\Boulder, CO 80301}
+\date{\today}
+\opening{To Whom It May Conern:}
+\closing{Yours faithfully,}
+\enclosure[Attached]{Curriculum Vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+\makelettertitle
+I am writing in response to the Optical Inspector Position opening at RealD refered through Aerotek Staffing Agency. I am very excited at the prospect at applying my research and science experience to industrial manufacturing, and think that I am a good fit for this job posting.
+
+While most of my experience is not directly in manufacturing I believe that my unique skill set has equipped me with the ability to preform this position at a very high level. Over the past year and a half I worked as a researcher in Liquid Crystal physics. This experience is very applicable to this employment opportunity. My duties included maintaining and using optical devices such as microscopes, optical traps, and spectral lasers. I have intimate knowledge of how to use, fix, and clean optical equipment. Prior to doing research in liquid crystals I also have multiple courses in optical theory and optical experimentation. These combined have given me 4 years of experience with optical components, providing me with a deep intuition of how optics are supposed to behave as well as an understanding of the underlying principles. This will better allow me to diagnose any errors or problems that may be presented to me.
+
+My liquid crystal research position also has given me a abundance of knowledge of the interactions between light and liquid crystals. This has provided me unique skills and experience that is very relevant to being an optical inspector in liquid crystal manufacturing. I already have the knowledge and troubleshooting experience with liquid crystals allowing me to immediately contribute to this position with minimal training. I have constructed and measured multiple liquid crystal cells in the past.
+
+My scientific background also has taught me the importance of careful note-taking and documentation as well as the importance of rigor and consistency in experiment. I know how to carefully record my thought processes and actions for later review and decision making. I am strong critical thinker and problem solver as well as a hard worker. I am confidant in my ability to immediately contribute to this company, as well as increasing the efficiency of the product line. I am very excited about this opportunity and am looking forward to hearing from you soon.
+
+\makeletterclosing
+
+\end{document}
+
+
+%% end of file `template.tex'.
