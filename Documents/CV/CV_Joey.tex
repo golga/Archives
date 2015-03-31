@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[black]{classic}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[bottom = 0.75in]{geometry}
+
+% personal data
+\firstname{Joe}
+\familyname{Becker}
+\address{1846 19th Street}{Boulder, CO 80302}
+\phone{(970)402-3968}
+\email{jbecker at colorado.edu}
+
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+\definecolor{web}{rgb}{0.2,0.2,0.2}
+%\definecolor{web}{rgb}{0.5,0.5,0.5}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{\textbf{Education}}
+\cventry{2005--2012}{\textbf{Bachelor of Arts}}{University of Colorado}{Boulder, CO USA}{}{- Physics,
+over all GPA: 3.0/4.0.}
+\cventry{2005--2012}{\textbf{Bachelor of Arts}}{University of Colorado}{Boulder, CO USA}{}{- Mathematics,
+over all GPA: 3.1/4.0.}
+\cventry{2001--2005}{\textbf{International Baccalaureate High School Diploma}}{Poudre High School}{USA}{}{}{}
+
+\section{\textbf{Academic Background}}
+\cvitem{Physics}{Advanced Physics/Optics Lab, Junior Level Electronics Lab, Quantum Mechanics, Electricity and Magnetism, Classical Mechanics, Thermodynamics, Error Analysis, Solid State Physics, General Relativity}
+\cvitem{Mathematics}{Calculus, Mathematical Analysis, ODE \& PDE,
+Complex Analysis, Fourier Analysis, Linear Algebra, Probability Theory, Mathematical Statistics}
+\cvitem{Computer Science}{Data Structures, Algorithms}
+
+\section{\textbf{Experience}}
+\cventry{2006--2008}{\textbf{Research Assistant}}{University of Colorado at Boulder: High Energy Physics BaBar Group}{Professors James G. Smith \& William T. Ford}{}
+{- Preformed data analysis for the BaBar collaboration. \newline
+ - Measured quasi-twobody decays $B^0\rightarrow a_0(1450)^-\pi^+$, $B^0\rightarrow a_0(1450)^-K^+$, and $B^0\rightarrow \eta\rho^0$}
+
+\cventry{2011}{\textbf{Summer Internship}}{Tech-X Corporation}{Peter Stoltz Ph.D}{}
+{- Conducted a verification study on Nautilus, the fluid plasma modeling software. \newline
+- Data analysis using python specifically in the NumPy, SciPy, MatPlotLib environment.}
+
+\cventry{2012--2013}{\textbf{Research Assistant}}{Liquid Crystal Materials Research Center}{Professors Noel Clark, Matthew Glaser, \& Joseph Maclennan}{}
+{- Designed and conducted scientific measurements on free-suspended liquid crystal films. \newline
+- Data analysis on experimental data using Python, Mathematica, MatLab, \& Origin 9}
+
+\cventry{2013--Present}{\textbf{Daytime Prep Cook}}{Under the Sun Eatery \& Taphouse}{Tim McMurray}{}
+{- Food preparation and Inventory management 
+ }
+
+\section{\textbf{Publications}}
+\cventry{2007}{The BABAR Collaboration, B. Aubert, et al}{"Search for Neutral B-Meson Decays to a0pi, a0K, etarho0, and etaf0"}{Phys. Rev D \textbf{75}, 111102 (2007)}{}{}{}{}
+
+
+\section{\textbf{Relevent skills}}
+\cvcomputer{OS}{Linux/Unix, Windows, DOS} {Programming}{C/C++, Python, Perl}
+\cvcomputer{Scientific}{Matlab, Maple, Mathematica, Matplotlib, LabView, Origin 9} {Typography}{\LaTeX, Microsoft Office}
+\cvcomputer{Miscellaneous}{Precision Machining}{}{}
+
+\end{document}
