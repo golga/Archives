@@ -59,14 +59,14 @@
 %\usecolortheme{beaver}
 %\usecolortheme{beetle}
 %\usecolortheme{crane}
-%\usecolortheme{dolphin}
+\usecolortheme{dolphin}
 %\usecolortheme{dove}
 %\usecolortheme{fly}
 %\usecolortheme{lily}
 %\usecolortheme{orchid}
 %\usecolortheme{rose}
 %\usecolortheme{seagull}
-\usecolortheme{seahorse}
+%\usecolortheme{seahorse}
 %\usecolortheme{whale}
 %\usecolortheme{wolverine}
 
@@ -117,7 +117,7 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 %\setbeamercolor{item}{fg=black}
 
 %titlepage logo
-\addtobeamertemplate{frametitle}{}{%
+\addtobeamertemplate{frametitle}{}{
 \begin{textblock*}{3cm}(-2cm,-1cm)
 \includegraphics[width=1.4cm,keepaspectratio]{Images/NIST_logo.png}
 \end{textblock*}}
@@ -129,15 +129,22 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 \titlepage % Print the title page as the first slide
 \end{frame}
 
-\begin{frame}
-\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-\end{frame}
+%\begin{frame}
+%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
+%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+%\end{frame}
 
 
 %%%%%%%%%PRESENTATION SLIDES%%%%%%%%
 
 \section{Background} 
+\begin{frame}{Whispering Gallery Mode Resonators}
+\end{frame}
+
+\begin{frame}\frametitle{Silica Microrod Resonators}
+\movie[width=3cm,height=2cm,poster]{}{Microrod_Fabrication.avi}
+\end{frame}
+
 \begin{frame}\frametitle{Brillouin Lasers}
 \begin{columns}
 \column{0.5\textwidth}
@@ -154,25 +161,29 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Silica $\mu$rod Resonators}
-\movie[width=3cm,height=2cm,poster]{}{Microrod_Fabrication.avi}
-
+\begin{frame}\frametitle{Previous SBS Micro Resonator Lasers}
 \end{frame}
 
 \section{Motivations}
-\begin{frame}\frametitle{Low Noise Laser Applications}
+
+\begin{frame}\frametitle{Current Laser Technology}
 \end{frame}
 
-\begin{frame}\frametitle{Current SBS Fiber Lasers}
+\begin{frame}\frametitle{Low-Noise Laser Applications}
 \end{frame}
+
 
 
 \section{Experiment}
 \begin{frame}\frametitle{Apparatus}
+\includegraphics[width=0.7\textwidth]{Images/SBS_Microrod_Schematic.png}
 \end{frame}
 
 \section{Results}
 \begin{frame}\frametitle{SBS Microrod Laser Frequency Noise}
+\includegraphics<1>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot1.png}
+\includegraphics<2>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot2.png}
+\includegraphics<3>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot3.png}
 \end{frame}
 
 \begin{frame}\frametitle{SBS Microrod Laser Intensity Noise}
@@ -182,18 +193,27 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 \end{frame}
 
 \section{Conclusions}
+
+\begin{frame}{Thermal Noise Effects}
+\end{frame}
+
+\begin{frame}{Summary of Results}
+\end{frame}
+
+\begin{frame}{Future Research Directions}
+\end{frame}
+
 \begin{frame}\frametitle{Acknowledgments}
 A special thanks to:
-
-\begin{block}{My Advisors}
-\begin{itemize}
-\item Scott Diddams and Scott Papp
-\end{itemize}
+\begin{block}{\centering My Advisors}
+\begin{center}
+Scott Diddams and Scott Papp
+\end{center}
 \end{block}
 
 \begin{columns}
 \column{0.5\textwidth}
-\begin{block}{Optical Frequency Measurement Lab}
+\begin{block}{\centering The NIST Optical Frequency Measurement Lab}
 \begin{itemize}
 \small
 \item Fred Baynes
@@ -208,7 +228,7 @@ A special thanks to:
 \end{block}
 
 \column{0.5\textwidth}
-\begin{block}{The Caltech Vahala Group}
+\begin{block}{\centering The Caltech Vahala Group}
 \begin{itemize}
 \small
 \item Hansuek Lee
@@ -216,21 +236,15 @@ A special thanks to:
 \end{itemize}
 \end{block}
 
-\begin{block}{Funding Provided By}
+\begin{block}{\centering Funding Provided By}
+\begin{center}
 \small
 The DARPA PULSE Program
 \includegraphics[width=1.1\textwidth]{Images/DARPA_logo.png}
+\end{center}
 \end{block}
 
 \end{columns}
-
-\
-
 \end{frame}
-
-\begin{frame}\frametitle{Questions?}
-\end{frame}
-
-
 
 \end{document} 
