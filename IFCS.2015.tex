@@ -83,7 +83,7 @@
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{textpos} % Package for text positioning
-\usepackage{multimedia}
+\usepackage{media9}
 
 
 %----------------------------------------------------------------------------------------
@@ -107,6 +107,8 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 
 \date{April 15, 2015} % Date, can be changed to a custom date
 
+\setbeamertemplate{section in toc}{\inserttocsection}
+
 %\setbeamercolor{block title}{fg=black, bg=yellow}
 %\setbeamercolor{title}{fg=black, bg=yellow}
 %\setbeamercolor{frametitle}{fg=black, bg=yellow}
@@ -129,88 +131,213 @@ National Institute of Standards and Technology\\ % Your institution for the titl
 \titlepage % Print the title page as the first slide
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Overview} % Table of contents slide, comment this block out to remove it
-%\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
-%\end{frame}
-
-
 %%%%%%%%%PRESENTATION SLIDES%%%%%%%%
 
 \section{Background} 
-\begin{frame}{Whispering Gallery Mode Resonators}
+\begin{frame}\frametitle{Current Laser Technology}
+As lasers increase in stability they increase in size.
+\includegraphics<1>[width=0.95\textwidth]{Images/Current_Laser1.png}
+\includegraphics<2>[width=0.95\textwidth]{Images/Current_Laser2.png}
 \end{frame}
 
-\begin{frame}\frametitle{Silica Microrod Resonators}
-\movie[width=3cm,height=2cm,poster]{}{Microrod_Fabrication.avi}
+\begin{frame}{Whispering Gallery Mode Resonators}
+\centering
+\includegraphics[width=0.7\textwidth]{Images/WGM_Resonator_Fig.png}
+\begin{columns}
+
+\column{0.3\textwidth}
+\begin{block}{Silica Microdisk}
+\includegraphics[width=0.5\textwidth]{Images/Wedge_Microdisk.png}
+\includegraphics[width=0.5\textwidth]{Images/Microtoroid.png}
+
+\scriptsize
+H. Lee, Nature Photon, 2012
+\end{block}
+
+\column{0.3\textwidth}
+\begin{block}{Silica Microrod}
+\includegraphics[width=1.0\textwidth]{Images/Microrods.png}
+
+\scriptsize
+P. Del'Haye, APL, 2013
+\end{block}
+
+\column{0.3\textwidth}
+\begin{block}{CaF$_2$ Resonator}
+\includegraphics[width=1.0\textwidth]{Images/CaF2_resonator.png}
+
+\scriptsize
+J. Hofer, PRA, 2010\\
+W. Liang, Opt Lett., 2011
+\end{block}
+\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Brillouin Lasers}
 \begin{columns}
-\column{0.5\textwidth}
-\includegraphics[width=5cm,keepaspectratio]{Images/SBS_Figure.png}
-
-\column{0.5\textwidth}
+\column{0.55\textwidth}
+\includegraphics[width=1.0\textwidth,keepaspectratio]{Images/SBS_Optical_Spectrum.png}\\
+\includegraphics[width=1.0\textwidth,keepaspectratio]{Images/SBS_Figure.png}
+\column{0.47\textwidth}
 \begin{block}{Gain Process}
 \begin{itemize}
-\item Pump scatters off of the phonons generating a stimulated Brillouin wave in the counter propagating direction 
-\item SBS and pump fields interact to drive phonons to reinforce Brillouin wave generation
+\item Brillouin scattering is a nonlinear process where a photon scatters off of a propagating phonon resulting in a backscattered photon
+which Doppler shifted due to the movement of the phonon.
+\item SBS and pump fields interfere to drive the phonons to stimulate additional Brillouin scattering.
 \end{itemize}
 \end{block}
-
 \end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Previous SBS Micro Resonator Lasers}
+\begin{frame}\frametitle{Why SBS Lasers?}
+\begin{columns}
+\column{0.5\textwidth}
+Because they have a high signal to noise ratio!
+\column{0.5\textwidth}
+\includegraphics[width=1.0\textwidth]{Images/SBS_Noise.png}
+\end{columns}
+
+\begin{block}{SBS Laser Noise}
+\begin{columns}
+\column{0.45\textwidth}
+SBS laser noise is governed by thermal fluctuations which are much larger than the energy of the phonons.  
+$$\frac{h\nu}{k_B T}<<1$$
+\column{0.45\textwidth}
+\includegraphics[width=1.0\textwidth]{Images/Thermal_Noise.png}
+\end{columns}
+\end{block}
 \end{frame}
 
-\section{Motivations}
+\begin{frame}\frametitle{SBS Lasers in Microresonators}
+Microresonators are a prime candidate for creating ultra-low-noise lasers using SBS, because of their ultra-high Q.
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[width=1.0\textwidth]{Images/SBS_Microres_SNR.png}
+\column{0.5\textwidth}
+\begin{itemize}
+\item Their low loss means a lower gain level at steady state operation.
+\item Lower gain threshold allows for less thermal noise to be added to the signal.
+\item Non-linear process lead to high signal power.
 
-\begin{frame}\frametitle{Current Laser Technology}
+\end{itemize}
+\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Low-Noise Laser Applications}
+\begin{frame}\frametitle{SBS Laser in Microdisk}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[width=1.0\textwidth]{Images/Freq_Noise_Comparison_Plot1.png}\\
+\includegraphics[width=1.0\textwidth]{Images/RF_Spectrum_Plot1.png}
+
+\column{0.5\textwidth}
+\includegraphics[width=0.9\textwidth]{Images/Microdisk.png}\\
+\begin{block}{Previous Microdisk Work}
+\begin{itemize}
+\item We measured a reduction in noise level by generating an SBS laser within a microdisk.
+\item This system has been shown to be tunable up to THz.
+\item This SBS laser has be referenced to a cavity for further noise reduction.
+\end{itemize}
+\end{block}
+\end{columns}
 \end{frame}
 
+\begin{frame}\frametitle{Increasing Mode Volume}
 
+\begin{block}{Moving from a Microdisk to a Microrod}
+\begin{columns}
+\column{0.3\textwidth}
+\begin{itemize}
+\item Microdisk thickness of $\approx 10\mu m$ 
+\linebreak
+\linebreak
+\linebreak
+\linebreak
+\linebreak
+\item Microrod thickness of $\approx 100\mu m$
+\end{itemize}
+
+\column{0.3\textwidth}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Images/Microdisk_Profile.png}\\
+\footnotesize{H. Lee, Nature Photonics, 2012}\\
+\includegraphics[width=1.0\textwidth,keepaspectratio]{Images/Microrod_Profile.png}
+\end{center}
+
+\column{0.3\textwidth}
+$$S_{\bar{u}}(\Omega)\propto V_m^{-1}$$\\
+
+\footnotesize{A. Matsko, J. Opt. Soc. Am. B, 2007}\\
+
+\begin{itemize}
+\item By increasing mode volume we reduce the amount of thermal fluctuations.
+\end{itemize}
+
+\end{columns}
+\end{block}
+\end{frame}
+
+\begin{frame}\frametitle{Silica Microrod Resonators}
+\includemedia[
+  width=1.0\textwidth,
+  height=1.0\textheight,
+  activate=onclick,
+  addresource=Microrod_Fabrication.mp4,
+  flashvars={flv=Microrod_Fabrication.mp4&autoPlay=true}]{
+  \includegraphics[width=1.0\textwidth]{Images/Laser_Machine_Fig.png}
+}{player_flv_maxi.swf}
+\end{frame}
 
 \section{Experiment}
+
 \begin{frame}\frametitle{Apparatus}
-\includegraphics[width=0.7\textwidth]{Images/SBS_Microrod_Schematic.png}
+\begin{columns}
+\column{0.5\textwidth}
+\includegraphics[width=1.0\textwidth]{Images/WGM_Resonator_Fig.png}\\
+\includegraphics[width=1.0\textwidth]{Images/SBS_Microrod.png}
+\column{0.5\textwidth}
+\begin{block}{Fiber Coupling}
+\begin{itemize}
+\item We pull a single mode optical fiber to form a taper with a waist on the order of the wavelength our light.
+\item With a fiber smaller than the optical mode we are able to overlap modes between the taper and the resonator. 
+\item This allows for a simple fiber integrated system.
+\end{itemize}
+\end{block}
+\end{columns}
 \end{frame}
 
 \section{Results}
 \begin{frame}\frametitle{SBS Microrod Laser Frequency Noise}
-\includegraphics<1>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot1.png}
-\includegraphics<2>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot2.png}
-\includegraphics<3>[width=1.05\textwidth]{Images/Freq_Noise_Comparison_Plot3.png}
-\end{frame}
-
-\begin{frame}\frametitle{SBS Microrod Laser Intensity Noise}
+\includegraphics<1>[width=1.0\textwidth]{Images/Freq_Noise_Comparison_Plot1.png}
+\includegraphics<2>[width=1.0\textwidth]{Images/Freq_Noise_Comparison_Plot2.png}
 \end{frame}
 
 \begin{frame}\frametitle{SBS Microrod Laser RF Spectrum}
+\includegraphics<1>[width=1.0\textwidth]{Images/RF_Spectrum_Plot1.png}
+\includegraphics<2>[width=1.0\textwidth]{Images/RF_Spectrum_Plot2.png}
 \end{frame}
 
 \section{Conclusions}
+\begin{frame}\frametitle{Summary of Results}
+\begin{itemize}
+\item We observed a two order reduction in noise from the SBS microdisk by changing to the microrod
+\item We observed an order reduction in linewidth from the SBS microdisk as well
+\end{itemize}
 
-\begin{frame}{Thermal Noise Effects}
-\end{frame}
+\begin{block}{Future Research Directions}
+\begin{columns}
+\column{0.4\textwidth}
+\includegraphics[width=0.95\textwidth]{Images/Thermal_Drift.png}
+\column{0.5\textwidth}
+\begin{itemize}
+\item We have observed a free running thermal drift of $7kHz/s$ and would like to make efforts to reduce the drift.
+\end{itemize}
+\end{columns}
 
-\begin{frame}{Summary of Results}
-\end{frame}
-
-\begin{frame}{Future Research Directions}
+\end{block}
 \end{frame}
 
 \begin{frame}\frametitle{Acknowledgments}
 A special thanks to:
-\begin{block}{\centering My Advisors}
-\begin{center}
-Scott Diddams and Scott Papp
-\end{center}
-\end{block}
-
 \begin{columns}
 \column{0.5\textwidth}
 \begin{block}{\centering The NIST Optical Frequency Measurement Lab}
@@ -221,8 +348,10 @@ Scott Diddams and Scott Papp
 \item Aur\'{e}lien Coillet
 \item Daniel Cole
 \item Pascal Del'Haye
+\item Scott Diddams
 \item Adam Green
 \item William Loh
+\item Scott Papp
 \item Frank Quinlan
 \end{itemize}
 \end{block}
@@ -245,6 +374,10 @@ The DARPA PULSE Program
 \end{block}
 
 \end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Questions?}
+\includegraphics[width=1.0\textwidth]{Images/RF_Spectrum_Plot2.png}
 \end{frame}
 
 \end{document} 
