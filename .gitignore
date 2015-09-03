@@ -1,0 +1,11 @@
+*.log
+Documents/CV/CV_Joey.out
+*.aux
+Documents/Talks/IFCS.2015.Talk/.IFCS.2015.tex.swp
+*.swo
+Documents/Talks/IFCS.2015.Talk/IFCS.2015.out
+*.nav
+Documents/Talks/IFCS.2015.Talk/IFCS.2015.snm
+*.toc
+Documents/Talks/IFCS.2015.Talk/IFCS.2015.tex~
+*.tex~
