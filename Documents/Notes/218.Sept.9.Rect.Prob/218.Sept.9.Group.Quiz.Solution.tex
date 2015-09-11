@@ -1,0 +1,205 @@
+\documentclass[11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{cancel}
+
+\setlength{\evensidemargin}{.25in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\topmargin}{-.75in}
+\setlength{\textwidth}{6.5in}
+\setlength{\textheight}{9.5in}
+\newcommand{\due}{September 12th, 2015}
+\newcommand{\HWnum}{1}
+\input{"C:/Users/joeor_000/Documents/Coursework/Define.tex"}
+
+\begin{document}
+A train with an initial velocity $v_0$ starts breaking at position $x_0$. It experiences a 
+deceleration of the form 
+\begin{equation}
+a(t) = -ct^2. 
+\label{aEqn}
+\end{equation}
+For safety reasons we wish to keep the magnitude of deceleration under a maximum value given by $a_{max} = g/3$. With this information we can 
+calculate the distance we need to start breaking such that the train comes to a stop without
+the magnitude of the deceleration exceeding $a_{max}$. Note that we made $a(t)$ be a 
+negative quantity because the breaks slow down the train. This is an arbitrary choice that
+we can make either way without changing the final solution.
+
+First we need to determine the initial conditions of the system. An initial condition is the
+state of the system at the start of the time or when $t=0$. So we are told that we start 
+with an initial velocity of $v_0$ at position $x_0$ therefore we say
+\begin{align*}
+v(t=0) &= v_0\\
+x(t=0) &= x_0.
+\end{align*}
+Here we are explicitly assuming that velocity, $v(t)$, and position, $x(t)$, are functions of
+time, the function form of which we will need to determine. 
+
+First to determine the functional form of velocity, $v(t)$, we use the fact that acceleration
+is the change of velocity with respect to time. Mathematically we write this as
+\begin{equation}
+a(t) = \frac{dv(t)}{dt}
+\label{Accler}
+\end{equation}
+where $d/dt$ is the derivative with respect to time. Therefore we can rearrange equation
+\ref{Accler} by multiplying both sides by $dt$
+\begin{align*}
+a(t) &= \frac{dv(t)}{dt}\\
+&\Downarrow\\
+a(t)dt &= \frac{dv(t)}{\cancel{dt}}\cancel{dt}\\
+&\Downarrow\\
+a(t)dt &= dv(t)
+\end{align*}
+Now to we can solve for $v(t)$ by integrating both sides where we use the given function of 
+acceleration shown in equation \ref{aEqn}.
+\begin{align*}
+\int dv(t) &= \int a(t)dt \\
+&\Downarrow\\
+v(t) &= \int -ct^2dt \\
+&= -\frac{c}{3}t^3 + A
+\end{align*}
+Note that we gained a new constant, $A$, from integrating. This is called a constant of 
+integration. We can solve for $A$ by using the initial condition $v(0) = v_0$. This yields
+\begin{align*}
+v(t=0) &= v_0 = \cancelto{0}{-\frac{c}{3}(0)^3} + A\\
+v_0 &= A
+\end{align*}
+We note that the integration constant in this case was just our initial velocity. So now we
+have a function that describes our velocity as a function of time given by
+\begin{equation}
+v(t) = -\frac{c}{3}t^3 + v_0.
+\label{vEqn}
+\end{equation}
+
+Next we need to determine the functional form of position, $x(t)$. This process follows in 
+the same was we determined $v(t)$. Namely we use the fact that velocity is the change of 
+position with respect to time or mathematically
+\begin{equation}
+v(t) = \frac{dx(t)}{dt}
+\label{Velo}
+\end{equation}
+Like before, we rearrange equation \ref{Velo} by multiplying both sides by $dt$ to get
+\begin{align*}
+v(t) &= \frac{dx(t)}{dt}\\
+&\Downarrow\\
+v(t)dt &= \frac{dx(t)}{\cancel{dt}}\cancel{dt}\\
+&\Downarrow\\
+v(t)dt &= dx(t)
+\end{align*}
+Now to solve for $x(t)$ we integrate both sides of this equations using the formula for 
+$v(t)$ we found above that is shown in equation \ref{vEqn}. So,
+\begin{align*}
+\int dx(t) &= \int v(t)dt \\
+&\Downarrow\\
+x(t) &= \int\left(-\frac{c}{3}t^3 + v_0\right)dt\\
+&= \int-\frac{c}{3}t^3dt + \int v_0dt\\
+&= -\frac{c}{12}t^4 + v_0t + B
+\end{align*}
+Again we gained a constant of integration, $B$, and like before we use our initial condition
+$x(0) = x_0$ to determine $B$ by
+\begin{align*}
+x(t=0) &= x_0 = \cancelto{0}{-\frac{c}{12}(0)^4} + \cancelto{0}{v_0(0)} + B\\
+x_0 &= B
+\end{align*}
+So we found that $B=x_0$. Now we have found another function this time that function 
+describes our position as a function of time. This is given by
+\begin{equation}
+x(t) = -\frac{c}{12}t^4 + v_0t + x_0.
+\label{xEqn}
+\end{equation}
+
+Grouping the equations that describe the motion of our train together we have
+\begin{align*}
+x(t) &= -\frac{c}{12}t^4 + v_0t + x_0\\
+v(t) &= -\frac{c}{3}t^3 + v_0\\
+a(t) &= -ct^2
+\end{align*}
+
+Now we are ready to start finding the distance we need to start breaking at! To do this we 
+need to realize ultimately the train needs to come to a stop. This means at a final time we
+will call $t_f$ the velocity of the train needs to be zero. Mathematically we say this by 
+$v(t=t_f) = 0$. We realize that $t_f$ is an important quantity to finding the distance we 
+need to stop breaking at, because the distance the train has traveled once we have come to a
+stop is $x(t=t_f) - x_0$. So we need to determine the final time, $t_f$. We can do this by 
+taking the velocity function we found to be equation \ref{vEqn} and evaluating it at $t=t_f$,
+and solving for $t_f$.
+\begin{align*}
+v(t=t_f) = 0 &= -\frac{c}{3}(t_f)^3 + v_0\\
+&\Downarrow\\
+-v_0 &= -\frac{c}{3}t_f^3 \\
+v_0\frac{3}{c} &= \cancel{-\frac{c}{3}}t_f^3\cancel{-\frac{3}{c}}\\
+&\Downarrow\\
+t_f^3 &= \frac{3v_0}{c}\\
+\left(t_f^3\right)^{1/3} &= \left(\frac{3v_0}{c}\right)^{1/3}\\
+&\Downarrow\\
+t_f &= \left(\frac{3v_0}{c}\right)^{1/3}
+\end{align*}
+So we have found $t_f$ but we are not done yet! We see that the final time, $t_f$, depends 
+on the constant $c$ that was given as part of equation \ref{aEqn}. To find $c$ we need to 
+use the safety constraint that states that $a_{max} = g/3$. We reason that if we want to 
+ensure that we do not exceed $a_{max}$ we need to reach $a_{max}$ at time final. This means
+that $a(t=t_f) = g/3$. So using equation \ref{aEqn}, which is the given functional form of 
+acceleration, evaluated at $t=t_f$ we can solve for $c$.
+\begin{align*}
+a(t=t_f) = -\frac{g}{3} &= -ct^2_f\\
+&\Downarrow\\
+\frac{g}{3} &= ct^2_f\\
+\frac{g}{3}\frac{1}{t_f^2} &= c\cancel{t_f^2}\cancel{\frac{1}{t_f^2}}\\
+&\Downarrow\\
+c &= \frac{g}{3t_f^2}
+\end{align*}
+We note that $c$ has a $t_f^2$ in it. This means we are going to need to do some extra work
+when we replace $c$ in our first solution of $t_f$.
+\begin{align*}
+t_f &= \left(\frac{3v_0}{c}\right)^{1/3}\\
+&\Downarrow\\
+t_f &= \left(\frac{3v_0}{\dfrac{g}{3t_f^2}}\right)^{1/3} = \left(\frac{3v_0}{1}\frac{3t_f^2}{g}\right)^{1/3}\\
+t_f^3 &= \left(\left(\frac{9v_0t_f^2}{g}\right)^{1/3}\right)^3\\
+t_f^3\frac{1}{t_f^2} &= \frac{9v_0\cancel{t_f^2}}{g}\frac{1}{\cancel{t_f^2}}\\
+&\Downarrow\\
+t_f &= \frac{9v_0}{g}
+\end{align*}
+Finally we have an expression for $t_f$ that we can plug into equation \ref{xEqn}! Now we 
+find the distance it takes to come to a stop, $x(t=t_f) - x_0$. But first we need to
+replace $c$ into $x(t)$.
+\begin{align*}
+x(t) &= -\frac{c}{12}t^4 + v_0t + x_0\\
+&\Downarrow\\
+x(t) &= -\frac{\frac{g}{3t_f^2}}{12}t^4 + v_0t + x_0\\
+x(t) &= -\frac{g}{36t_f^2}t^4 + v_0t + x_0
+\end{align*}
+Now we can find the stopping distance $x(t=t_f) - x_0$ by
+\begin{align*}
+x(t=t_f) - x_0 &= -\frac{g}{36t_f^2}(t_f)^4 + v_0(t_f) + \cancel{x_0} - \cancel{x_0}\\
+&\Downarrow\\
+x(t=t_f) - x_0 &= -\frac{g}{36}t_f^2 + v_0t_f\\
+&\Downarrow\\
+x(t=t_f) - x_0 &= -\frac{g}{36}\left(\frac{9v_0}{g}\right)^2 + v_0\frac{9v_0}{g}\\
+&= -\frac{g}{36}\frac{81v_0^2}{g^2} + \frac{9v_0^2}{g}\\
+&= -\frac{81v_0^2}{36g}  + \frac{9v_0^2}{g}\\
+&= \frac{v_0^2}{g}\left(9-\frac{81}{36}\right)\\
+&= \frac{27}{4}\frac{v_0^2}{g}
+\end{align*}
+
+We see that in the end result the distance the train travels to a stop does not depend on 
+$x_0$! This is because we are interested in the distance traveled relative to $x_0$. So we
+can choose any value for $x_0$ and it would not effect the final solution. 
+Note that we can check to make sure that the units work out. We know that the units of $x$ 
+are in meters. And the units of $v_0^2/g$ are $\frac{(m^2/s^2)}{(m/s^2)} = m$ so our units
+work! Now we can plug in our values where $v_0 = 89\unit{m/s}$ and $g=9.8\unit{m/s^2}$ we 
+get
+\begin{align*}
+x(t=t_f) - x_0 &= \frac{27}{4}\frac{v_0^2}{g}\\
+&\Downarrow\\
+x(t=t_f) - x_0 &= \frac{27}{4}\frac{(89)^2}{9.8} \approx 5500\unit{m}
+\end{align*}
+
+Now for extra practice try solving for the more general case where $a(t) = ct^{m}$ and 
+$a_{max} = g/k$ and see if you can recreate the general solution
+$$x(t_f) - x_0 = \frac{v_0^2(m+1)k}{g(m+2)}$$
+\end{document}
+
