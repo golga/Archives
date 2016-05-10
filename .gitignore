@@ -1,4 +1,5 @@
 *.log
+<<<<<<< HEAD
 Documents/CV/CV_Joey.out
 *.aux
 Documents/Talks/IFCS.2015.Talk/.IFCS.2015.tex.swp
@@ -9,3 +10,8 @@ Documents/Talks/IFCS.2015.Talk/IFCS.2015.snm
 *.toc
 Documents/Talks/IFCS.2015.Talk/IFCS.2015.tex~
 *.tex~
+=======
+Documents/CV/CV_Joey.aux
+*.tex~
+Documents/CV/CV_Joey.out
+>>>>>>> origin/master
