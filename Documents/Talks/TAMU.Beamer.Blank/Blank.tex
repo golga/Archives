@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Texas A&M University Physics Template
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Modified by Joe Becker
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass{beamer}
+
+\mode<presentation> 
+
+\usetheme{Madrid}
+\usecolortheme{dolphin}
+\usefonttheme{professionalfonts}
+
+\setbeamertemplate{navigation symbols}{} 
+
+\setbeamertemplate{footline}
+{
+\leavevmode%
+\hbox{%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshortauthor \ {(\insertshortinstitute)}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+        \usebeamerfont{title in head/foot}\insertshorttitle
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+        \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+\setbeamertemplate{frametitle}
+{
+    \begin{beamercolorbox}[sep=0.3cm,ht=1.8em,wd=\paperwidth]{frametitle}
+        \vbox{}\vskip-0.0ex%
+        \strut\insertframetitle\strut
+        \hfill
+        \includegraphics[height=1.8em,keepaspectratio]{Images/TAMU_logo_box.png}
+        \vskip-2.8ex%
+    \end{beamercolorbox}
+}
+
+\definecolor{maroon}{RGB}{80,0,0}
+
+\setbeamercolor{title}{bg=maroon, fg=white}
+\setbeamercolor{block title}{bg=maroon, fg=white}
+\setbeamercolor{block body}{bg=maroon!05, fg=black}
+\setbeamercolor{frametitle}{fg=maroon, bg=white}
+\setbeamercolor{item}{fg=maroon}
+\setbeamercolor{section in head/foot}{bg=maroon, fg=white}
+
+
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{textpos} 
+\usepackage{media9}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Title]{Full Title}
+
+\author[J. Becker]{Joe Becker}
+
+\institute[Texas A\&M]{Texas A\&M Department of Physics and Astronomy
+
+\medskip
+\textit{jbecker@physics.tamu.edu} 
+}
+
+\date{January 1, 2000} 
+
+\titlegraphic{\includegraphics[height=1.5cm]{Images/TAMU_logo.png}}
+
+%----------------------------------------------------------------------------------------
+% PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\setbeamertemplate{items}[circle]
+
+\begin{frame}
+\titlepage 
+\end{frame}
+
+
+\section{Motivations} 
+\begin{frame}\frametitle{Example Frame}
+    \begin{block}{Example Block}
+        \begin{itemize}
+            \item Item 1
+            \item Item 2
+            \item Item 3
+        \end{itemize}
+    \end{block}
+\end{frame}
+\section{Background} 
+\section{Apparatus} 
+\section{Experiment} 
+\section{Results} 
+\section{Conclusion} 
+
+\end{document}
+

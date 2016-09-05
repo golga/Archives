@@ -15,3 +15,6 @@ Documents/CV/CV_Joey.aux
 *.tex~
 Documents/CV/CV_Joey.out
 >>>>>>> origin/master
+*.swp
+*.out
+*.snm
