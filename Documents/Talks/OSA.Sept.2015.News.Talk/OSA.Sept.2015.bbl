@@ -1,0 +1,97 @@
+\begin{thebibliography}{8}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chiodo et~al.(2015)Chiodo, Quintin, Stefani, Wiotte, Camisard,
+  Chardonnet, Santarelli, Amy-Klein, Pottie, and Lopez]{Chiodo2015}
+N.~Chiodo, N.~Quintin, F.~Stefani, F.~Wiotte, E.~Camisard, C.~Chardonnet,
+  G.~Santarelli, A.~Amy-Klein, P.-E. Pottie, and O.~Lopez.
+\newblock {Cascaded optical fiber link using the internet network for remote
+  clocks comparison.}
+\newblock \emph{Optics express}, 23\penalty0 (26):\penalty0 33927--37, 2015.
+\newblock ISSN 1094-4087.
+\newblock \doi{10.1364/OE.23.033927}.
+\newblock URL \url{http://arxiv.org/abs/1509.05885}.
+
+\bibitem[Falke et~al.(2014)Falke, Lemke, Grebing, Lipphardt, Weyers, Gerginov,
+  Huntemann, Hagemann, Al-Masoudi, H{\"{a}}fner, Vogt, Sterr, and
+  Lisdat]{Falke2014}
+S.~Falke, N.~Lemke, C.~Grebing, B.~Lipphardt, S.~Weyers, V.~Gerginov,
+  N.~Huntemann, C.~Hagemann, A.~Al-Masoudi, S.~H{\"{a}}fner, S.~Vogt, U.~Sterr,
+  and C.~Lisdat.
+\newblock {A strontium lattice clock with $3\times10-17$ inaccuracy and its
+  frequency}.
+\newblock \emph{New Journal of Physics}, 16:\penalty0 0--18, 2014.
+\newblock ISSN 13672630.
+\newblock \doi{10.1088/1367-2630/16/7/073023}.
+
+\bibitem[Grebing et~al.(2016)Grebing, Al-Masoudi, D{\"{o}}rscher, H{\"{a}}fner,
+  Gerginov, Weyers, Lipphardt, Riehle, Sterr, and Lisdat]{Grebing2016}
+C.~Grebing, A.~Al-Masoudi, S.~D{\"{o}}rscher, S.~H{\"{a}}fner, V.~Gerginov,
+  S.~Weyers, B.~Lipphardt, F.~Riehle, U.~Sterr, and C.~Lisdat.
+\newblock {Realization of a timescale with an accurate optical lattice clock}.
+\newblock \emph{Optica}, 3\penalty0 (6):\penalty0 563, jun 2016.
+\newblock ISSN 2334-2536.
+\newblock \doi{10.1364/OPTICA.3.000563}.
+\newblock URL \url{http://arxiv.org/abs/1511.03888
+  https://www.osapublishing.org/abstract.cfm?URI=optica-3-6-563}.
+
+\bibitem[Lisdat et~al.(2016)Lisdat, Grosche, Quintin, Shi, Raupach, Grebing,
+  Nicolodi, Stefani, Al-Masoudi, D{\"{o}}rscher, H{\"{a}}fner, Robyr, Chiodo,
+  Bilicki, Bookjans, Koczwara, Koke, Kuhl, Wiotte, Meynadier, Camisard,
+  Abgrall, Lours, Legero, Schnatz, Sterr, Denker, Chardonnet, {Le Coq},
+  Santarelli, Amy-Klein, {Le Targat}, Lodewyck, Lopez, and Pottie]{Lisdat2016}
+C.~Lisdat, G.~Grosche, N.~Quintin, C.~Shi, S.~Raupach, C.~Grebing, D.~Nicolodi,
+  F.~Stefani, A.~Al-Masoudi, S.~D{\"{o}}rscher, S.~H{\"{a}}fner, J.-L. Robyr,
+  N.~Chiodo, S.~Bilicki, E.~Bookjans, A.~Koczwara, S.~Koke, A.~Kuhl, F.~Wiotte,
+  F.~Meynadier, E.~Camisard, M.~Abgrall, M.~Lours, T.~Legero, H.~Schnatz,
+  U.~Sterr, H.~Denker, C.~Chardonnet, Y.~{Le Coq}, G.~Santarelli, A.~Amy-Klein,
+  R.~{Le Targat}, J.~Lodewyck, O.~Lopez, and P.-E. Pottie.
+\newblock {A clock network for geodesy and fundamental science}.
+\newblock \emph{Nature Communications}, 7:\penalty0 12443, aug 2016.
+\newblock ISSN 2041-1723.
+\newblock \doi{10.1038/ncomms12443}.
+\newblock URL \url{http://arxiv.org/abs/1511.07735
+  http://www.nature.com/doifinder/10.1038/ncomms12443}.
+
+\bibitem[Nicolodi et~al.(2014)Nicolodi, Argence, Zhang, {Le Targat},
+  Santarelli, and {Le Coq}]{Nicolodi2014}
+D.~Nicolodi, B.~Argence, W.~Zhang, R.~{Le Targat}, G.~Santarelli, and Y.~{Le
+  Coq}.
+\newblock {Spectral purity transfer between optical wavelengths at the 10-18
+  level}.
+\newblock \emph{CPEM Digest (Conference on Precision Electromagnetic
+  Measurements)}, 8\penalty0 (January):\penalty0 64--65, 2014.
+\newblock ISSN 05891485.
+\newblock \doi{10.1109/CPEM.2014.6898260}.
+
+\bibitem[Raupach et~al.(2015)Raupach, Koczwara, and Grosche]{Raupach2015}
+S.~M.~F. Raupach, A.~Koczwara, and G.~Grosche.
+\newblock {Brillouin amplification supports 1×10-20 uncertainty in optical
+  frequency transfer over 1400 km of underground fiber}.
+\newblock \emph{Physical Review A - Atomic, Molecular, and Optical Physics},
+  92\penalty0 (2):\penalty0 1--5, 2015.
+\newblock ISSN 10941622.
+\newblock \doi{10.1103/PhysRevA.92.021801}.
+
+\bibitem[Takamoto et~al.(2005)Takamoto, Hong, Higashi, and
+  Katori]{Takamoto2005}
+M.~Takamoto, F.-L. Hong, R.~Higashi, and H.~Katori.
+\newblock {An optical lattice clock.}
+\newblock \emph{Nature}, 435\penalty0 (7040):\penalty0 321--324, 2005.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature03541}.
+
+\bibitem[Ushijima et~al.(2015)Ushijima, Takamoto, Das, Ohkubo, and
+  Katori]{Ushijima2015}
+I.~Ushijima, M.~Takamoto, M.~Das, T.~Ohkubo, and H.~Katori.
+\newblock {Cryogenic optical lattice clocks}.
+\newblock \emph{Nature Photonics}, 9\penalty0 (February):\penalty0 1--5, 2015.
+\newblock ISSN 1749-4885.
+\newblock \doi{10.1038/nphoton.2015.5}.
+\newblock URL \url{http://www.nature.com/doifinder/10.1038/nphoton.2015.5}.
+
+\end{thebibliography}
