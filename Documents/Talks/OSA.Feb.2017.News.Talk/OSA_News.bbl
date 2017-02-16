@@ -1,0 +1,51 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Einstein et~al.(1935)Einstein, Podolsky, and Rosen]{Brassard2010}
+A.~Einstein, B.~Podolsky, and N.~Rosen.
+\newblock {Can Quantum-Mechanical Description of Physical Reality Be Considered
+  Complete?}
+\newblock \emph{Physical Review}, 47\penalty0 (10):\penalty0 777--780, may
+  1935.
+\newblock ISSN 0031-899X.
+\newblock \doi{10.1103/PhysRev.47.777}.
+\newblock URL \url{http://link.springer.com/10.1007/s10701-010-9411-9
+  http://link.aps.org/doi/10.1103/PhysRev.47.777}.
+
+\bibitem[Handsteiner et~al.(2016)Handsteiner, Friedman, Rauch, Gallicchio, Liu,
+  Hosp, Kofler, Bricher, Fink, Leung, Mark, Nguyen, Sanders, Steinlechner,
+  Ursin, Wengerowsky, Guth, Kaiser, Scheidl, and Zeilinger]{Handsteiner2016}
+J.~Handsteiner, A.~S. Friedman, D.~Rauch, J.~Gallicchio, B.~Liu, H.~Hosp,
+  J.~Kofler, D.~Bricher, M.~Fink, C.~Leung, A.~Mark, H.~T. Nguyen, I.~Sanders,
+  F.~Steinlechner, R.~Ursin, S.~Wengerowsky, A.~H. Guth, D.~I. Kaiser,
+  T.~Scheidl, and A.~Zeilinger.
+\newblock {Cosmic Bell Test: Measurement Settings from Milky Way Stars}.
+\newblock pages 1--15, 2016.
+\newblock ISSN 0031-9007.
+\newblock \doi{10.1103/PhysRevLett.118.060401}.
+\newblock URL \url{http://arxiv.org/abs/1611.06985}.
+
+\bibitem[Kim et~al.(2006)Kim, Fiorentino, and Wong]{Kim2006}
+T.~Kim, M.~Fiorentino, and F.~N.~C. Wong.
+\newblock {Phase-stable source of polarization-entangled photons using a
+  polarization sagnac interferometer}.
+\newblock \emph{Conference on Lasers and Electro-Optics and 2006 Quantum
+  Electronics and Laser Science Conference, CLEO/QELS 2006}, \penalty0
+  (January):\penalty0 1--5, 2006.
+\newblock ISSN 10941622.
+\newblock \doi{10.1109/CLEO.2006.4628715}.
+
+\bibitem[Larsson(2014)]{Larsson2014a}
+J.-{\AA}. Larsson.
+\newblock {Loopholes in Bell Inequality Tests of Local Realism}.
+\newblock \emph{Journal of Physics A: Mathematical and Theoretical},
+  47:\penalty0 424003, 2014.
+\newblock ISSN 17518121.
+\newblock \doi{10.1088/1751-8113/47/42/424003}.
+\newblock URL \url{http://arxiv.org/abs/1407.0363}.
+
+\end{thebibliography}
