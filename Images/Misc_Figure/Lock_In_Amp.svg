@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="112.37945mm"
+   height="52.735645mm"
+   viewBox="0 0 398.19489 186.85858"
+   id="svg4821"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="Lock_In_Amp.svg">
+  <defs
+     id="defs4823" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="-145.90261"
+     inkscape:cy="118.4837"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     fit-margin-top="10"
+     inkscape:window-width="1920"
+     inkscape:window-height="1137"
+     inkscape:window-x="1016"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4826">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-93.759749,-463.98733)">
+    <g
+       id="g4171"
+       transform="matrix(4.4813132,0,0,4.4813132,-2145.1137,-3510.5371)">
+      <rect
+         ry="3.8296332"
+         rx="3.8903539"
+         y="895.3175"
+         x="508.00894"
+         height="24.883583"
+         width="72.043045"
+         id="rect6298-4"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="scale(1.0617701,0.94182347)"
+         sodipodi:linespacing="125%"
+         id="text6303-2"
+         y="973.99701"
+         x="500.07217"
+         style="font-style:normal;font-weight:normal;font-size:12.02923489px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="973.99701"
+           x="500.07217"
+           id="tspan6305-0"
+           sodipodi:role="line">Lock-in</tspan></text>
+      <ellipse
+         ry="1.1310718"
+         rx="1.2751204"
+         cy="911.06549"
+         cx="516.87079"
+         id="path6311-0"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <ellipse
+         ry="1.1310718"
+         rx="1.2751204"
+         cy="899.14569"
+         cx="570.87085"
+         id="path6311-4-5"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="scale(1.0617701,0.94182347)"
+         sodipodi:linespacing="125%"
+         id="text6328-9"
+         y="974.64008"
+         x="481.08304"
+         style="font-style:normal;font-weight:normal;font-size:5.51822376px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="974.64008"
+           x="481.08304"
+           id="tspan6330-4"
+           sodipodi:role="line">REF</tspan></text>
+      <text
+         transform="scale(1.0617701,0.94182347)"
+         sodipodi:linespacing="125%"
+         id="text6332-4"
+         y="961.38232"
+         x="528.84241"
+         style="font-style:normal;font-weight:normal;font-size:5.40491104px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="961.38232"
+           x="528.84241"
+           id="tspan6334-4"
+           sodipodi:role="line">Input</tspan></text>
+      <ellipse
+         ry="1.1310718"
+         rx="1.2751204"
+         cy="899.14612"
+         cx="516.87109"
+         id="path6311-4-0-4"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.99999994;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <text
+         transform="scale(1.0617701,0.94182347)"
+         sodipodi:linespacing="125%"
+         id="text6351-5"
+         y="961.29437"
+         x="479.40527"
+         style="font-style:normal;font-weight:normal;font-size:5.84192657px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="961.29437"
+           x="479.40527"
+           id="tspan6353-4"
+           sodipodi:role="line">Output</tspan></text>
+    </g>
+  </g>
+</svg>
